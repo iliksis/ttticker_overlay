@@ -9,9 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styles: `
     :host {
       max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem;
+      margin: 0;
+      padding: 0;
       text-align: center;
+		height: 100vh;
+		width: 100vw;
+		display: block;
     }
   `,
 })

@@ -4,46 +4,34 @@ import { Component, signal } from '@angular/core';
   selector: 'app-home',
   standalone: true,
   template: `
-    <div>
-      <a href="https://analogjs.org/" target="_blank">
-        <img alt="Analog Logo" class="logo analog" src="/analog.svg" />
+    <h2 class="text-3xl font-bold">
+      <a href="https://ticker.tt-news.com/" target="_blank" class="text-link">
+        https://ticker.tt-news.com/
       </a>
-    </div>
-
-    <h2>Analog</h2>
+      Overlay
+    </h2>
 
     <h3>The fullstack meta-framework for Angular!</h3>
 
-    <div class="card">
-      <button type="button" (click)="increment()">Count {{ count() }}</button>
+    <div class="flex flex-row gap-8 justify-center">
+      <a class="card" href="instruction">Anleitung</a>
+      <a class="card" href="/overview">Übersicht</a>
+      <a class="card" href="/table/1">Tisch 1</a>
+      <a class="card" href="/table/2">Tisch 2</a>
     </div>
 
     <p class="read-the-docs">
-      <a href="https://analogjs.org" target="_blank">Docs</a> |
-      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a> |
-      <a href="https://github.com/sponsors/brandonroberts" target="_blank">
-        Sponsor
-      </a>
+      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a>
     </p>
   `,
   styles: `
-    .logo {
-      will-change: filter;
-    }
-
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
-    }
-
-    .read-the-docs > * {
-      color: #fff;
-    }
-
-    @media (prefers-color-scheme: light) {
-      .read-the-docs > * {
-        color: #213547;
-      }
-    }
+	:host {
+		display: flex;
+	  	flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center;
+	  	gap: 1rem;
+	}
   `,
 })
 export default class HomeComponent {
