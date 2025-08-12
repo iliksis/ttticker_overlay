@@ -64,7 +64,7 @@ import { Component, signal } from '@angular/core';
         Analog
       </a>
       and
-      <a href="https://analogjs.org/" target="_blank" class="hover:text-white">
+      <a href="https://vite.dev/" target="_blank" class="hover:text-white">
         Vite
       </a>
       |
