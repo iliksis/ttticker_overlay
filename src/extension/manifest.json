@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "TT Ticker Interceptor",
+  "version": "1.0",
+  "description": "Intercepts liveticker requests from ticker.tt-news.com and forwards to a server",
+  "permissions": ["webRequest", "activeTab"],
+  "host_permissions": [
+    "https://ticker.tt-news.com/*",
+    "*://identitytoolkit.googleapis.com/*",
+    "{{DOMAIN}}/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
