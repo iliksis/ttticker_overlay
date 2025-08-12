@@ -33,25 +33,25 @@ import { Component, signal } from '@angular/core';
       class="grid grid-cols-1 md:grid-cols-2 max-w-6xl gap-8 p-8 mx-auto w-full
 	"
     >
-      <a class="card" href="instruction">
+      <a class="card card-hover" href="instruction">
         <div class="text-5xl mb-4">📋</div>
         <h3 class="text-2xl font-bold mb-2 text-white">Anleitung</h3>
         <p class="text-white/80">Setup und Nutzungsanleitung</p>
       </a>
 
-      <a class="card" href="/overview">
+      <a class="card card-hover" href="/overview">
         <div class="text-5xl mb-4">📊</div>
         <h3 class="text-2xl font-bold mb-2 text-white">Übersicht</h3>
         <p class="text-white/80">Overlay für die komplette Spielübersicht</p>
       </a>
 
-      <a class="card" href="/table/1">
+      <a class="card card-hover" href="/table/1">
         <div class="text-5xl mb-4">🏓</div>
         <h3 class="text-2xl font-bold mb-2 text-white">Tisch 1</h3>
         <p class="text-white/80">Overlay für Tisch 1</p>
       </a>
 
-      <a class="card" href="/table/2">
+      <a class="card card-hover" href="/table/2">
         <div class="text-5xl mb-4">🏓</div>
         <h3 class="text-2xl font-bold mb-2 text-white">Tisch 2</h3>
         <p class="text-white/80">Overlay für Tisch 2</p>
@@ -81,7 +81,7 @@ import { Component, signal } from '@angular/core';
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background: linear-gradient(135deg, #0385a6 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #0385a6 0%, #A6033D 100%);
     }
   `,
 })

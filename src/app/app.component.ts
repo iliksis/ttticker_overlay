@@ -11,9 +11,8 @@ import { RouterOutlet } from '@angular/router';
       margin: 0;
       padding: 0;
       text-align: center;
-		height: 100vh;
-		width: 100vw;
-		display: block;
+	  height: 100vh;
+	  display: block;
     }
   `,
 })
