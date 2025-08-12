@@ -16,7 +16,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  @apply bg-black;
 }
 
 h1 {
@@ -46,10 +45,33 @@ button:focus-visible {
 }
 
 .card {
-  @apply p-8 rounded-md border-2 border-gray-100 bg-gray-50;
+  @apply relative overflow-hidden rounded-2xl border border-white/20 
+         bg-white/10 backdrop-blur-lg p-8 transition-all duration-300 
+         hover:bg-white/20 hover:scale-105 hover:shadow-2xl;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+}
+
 .card:hover {
-  @apply shadow-md;
+  @apply shadow-2xl;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 app-table {
