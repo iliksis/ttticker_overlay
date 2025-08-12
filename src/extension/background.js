@@ -37,7 +37,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   },
   {
     urls: [
-      "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyAAtuXJ2Ytl4EmVUIvByeNm6agPlkUpMXk",
+      "https://storage.googleapis.com/data-ticker-prod-tt-news-com/spiel/*",
     ],
   },
   ["requestBody"]
