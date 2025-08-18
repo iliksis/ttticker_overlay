@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "TT Ticker Interceptor",
+  "version": "1.0",
+  "description": "Intercepts liveticker requests from ticker.tt-news.com and forwards to a server",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://ticker.tt-news.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://ticker.tt-news.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

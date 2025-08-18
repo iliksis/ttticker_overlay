@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-link: #646cff;
+	--color-player: #0385a6;
+	--color-match: #81c3d1;
+	--color-accent: #a63b60;
+	--color-linear-1: #0385a6;
+	--color-linear-2: #a6033d;
+}
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+	color: #213547;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	@apply cursor-pointer;
+}
+
+.card {
+	@apply relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 p-8 backdrop-blur-lg transition-all duration-300;
+
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.card-hover:hover {
+	@apply scale-105 bg-white/20 shadow-2xl;
+}
+
+table {
+	@apply table-fixed;
+}
+tr:nth-child(1) {
+	td:nth-child(1) {
+		@apply rounded-tl-md;
+	}
+	td:nth-child(2) {
+		@apply w-6;
+		span {
+			@apply inline-block h-4 w-4 rounded-xl bg-white;
+		}
+	}
+	td:nth-child(3) {
+		@apply w-8;
+		span {
+			@apply bg-white p-0.5 text-player;
+		}
+	}
+	td:nth-child(4) {
+		@apply w-9 text-center;
+	}
+	td:nth-child(5) {
+		@apply w-9 rounded-tr-md bg-white text-center text-player;
+	}
+}
+tr:nth-child(2) {
+	td:nth-child(1) {
+		@apply rounded-bl-md;
+	}
+	td:nth-child(2) {
+		@apply w-6;
+		span {
+			@apply inline-block h-4 w-4 rounded-xl bg-white;
+		}
+	}
+	td:nth-child(3) {
+		@apply w-8;
+		span {
+			@apply bg-white p-0.5 text-player;
+		}
+	}
+	td:nth-child(4) {
+		@apply w-9 text-center;
+	}
+	td:nth-child(5) {
+		@apply w-9 rounded-br-md bg-white text-center text-player;
+	}
+}
+td {
+	@apply bg-player p-2 text-white;
+}
