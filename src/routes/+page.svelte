@@ -55,7 +55,9 @@
 
 	<footer class="mt-auto p-8 text-center text-sm text-white/60">
 		Built with
-		<a href="https://analogjs.org/" target="_blank" class="hover:text-white"> Analog </a>
+		<a href="https://svelte.dev/docs/kit/introduction" target="_blank" class="hover:text-white">
+			SvelteKit
+		</a>
 		and
 		<a href="https://vite.dev/" target="_blank" class="hover:text-white"> Vite </a>
 		|
