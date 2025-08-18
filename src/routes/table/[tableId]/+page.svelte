@@ -1,4 +1,13 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		console.log('mounted');
+		const eventSource = new EventSource('/api/liveticker');
+		eventSource.onmessage = (event) => {
+			console.log(event);
+		};
+	});
 	const table$ = {
 		away: 'Max Mustermann',
 		home: 'Max Mustermann',
