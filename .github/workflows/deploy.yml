@@ -11,6 +11,7 @@ jobs:
     name: Prepare Extension
     runs-on: ubuntu-latest
     steps:
+      - run: tree
       - uses: jacobtomlinson/gha-find-replace@3.0.5
         with:
           include: "*/extension/*"
