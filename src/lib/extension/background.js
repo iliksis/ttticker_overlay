@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 	if (request.type === 'TICKER_UPDATE') {
 		console.log('🎾 New ticker update received:', request);
 
-		fetch('http://localhost:5173/api/liveticker', {
+		fetch('{{baseURL}}/api/liveticker', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
