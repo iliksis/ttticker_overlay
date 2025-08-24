@@ -115,7 +115,7 @@
 							>
 							<button
 								class="rounded-sm border border-white/20 bg-white/10 p-2 text-white transition-all duration-300 hover:bg-white/20"
-								onclick={copyToClipboard('/overview')}
+								onclick={copyToClipboard('/overlay/overview')}
 								aria-label="Link in Zwischenablage kopieren"
 							>
 								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
 							>
 							<button
 								class="rounded-sm border border-white/20 bg-white/10 p-2 text-white transition-all duration-300 hover:bg-white/20"
-								onclick={copyToClipboard('/table/1')}
+								onclick={copyToClipboard('/overlay/table/1')}
 								aria-label="Link in Zwischenablage kopieren"
 							>
 								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +155,7 @@
 							>
 							<button
 								class="rounded-sm border border-white/20 bg-white/10 p-2 text-white transition-all duration-300 hover:bg-white/20"
-								onclick={copyToClipboard('/table/2')}
+								onclick={copyToClipboard('/overlay/table/2')}
 								aria-label="Link in Zwischenablage kopieren"
 							>
 								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

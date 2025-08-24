@@ -26,7 +26,7 @@
 	});
 </script>
 
-<div class="fixed bottom-4 left-4 block font-bold">
+<div class="fixed bottom-4 left-4 block text-xl font-semibold">
 	{#if table}
 		<table>
 			<tbody>

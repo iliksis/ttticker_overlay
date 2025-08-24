@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Match from '$lib/components/match.svelte';
-	import type { Data, Table } from '$lib/type';
+	import type { Data } from '$lib/type';
 	import { onMount } from 'svelte';
 
 	let data: Data | undefined = $state();
@@ -78,9 +78,7 @@
 									class="rounded-2xl border border-emerald-400/30 bg-white/10 p-6 backdrop-blur-md"
 								>
 									<Match
-										home={data.home}
 										homePlayer={match.home}
-										away={data.away}
 										awayPlayer={match.away}
 										score={match.score}
 										sets={match.setInfo.map((set) => set.score).join(' - ')}
@@ -102,9 +100,7 @@
 									class="rounded-2xl border border-yellow-400/30 bg-white/10 p-4 backdrop-blur-md"
 								>
 									<Match
-										home={data.home}
 										homePlayer={match.home}
-										away={data.away}
 										awayPlayer={match.away}
 										score={match.score}
 										sets={match.setInfo.map((set) => set.score).join(' - ')}
@@ -124,9 +120,7 @@
 							{#each finishedMatches as match}
 								<div class="rounded-2xl border border-white/20 bg-white/5 p-4 backdrop-blur-md">
 									<Match
-										home={data.home}
 										homePlayer={match.home}
-										away={data.away}
 										awayPlayer={match.away}
 										score={match.score}
 										sets={match.setInfo.map((set) => set.score).join(' - ')}

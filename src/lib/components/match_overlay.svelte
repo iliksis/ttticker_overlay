@@ -10,13 +10,13 @@
 	export let status: State;
 </script>
 
-<div class="grid grid-cols-3 items-center">
+<div class="grid w-full grid-cols-3 items-center text-2xl">
 	<div class="flex items-center justify-start">
 		<div class="text-left">
 			<div class="font-semibold">{homePlayer}</div>
 		</div>
 	</div>
-	<div class={['text-center text-lg font-bold', status === 'ONGOING' && 'text-emerald-400']}>
+	<div class={['text-center font-bold', status === 'ONGOING' && 'text-linear-2']}>
 		{score}
 	</div>
 	<div class="flex items-center justify-end">
@@ -25,6 +25,6 @@
 		</div>
 	</div>
 </div>
-<div class="text-md opacity-70">
+<div class="text-xl opacity-70">
 	{sets}
 </div>
