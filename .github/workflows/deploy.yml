@@ -12,7 +12,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v5.0.0
         - name: Replace baseURL placeholder
-          run: find ./src/lib/extension/ -name "*.js" -type f -exec sed -i 's/{{baseURL}}/${{ secrets.baseUrl }}/g' {} \;
+          run: find ./src/lib/extension/ -name "*.js" -type f -exec sed -i 's/{{baseURL}}/${{ secrets.BASEURL }}/g' {} \;
         - uses: vimtor/action-zip@v1.2
           with:
             files: ./src/lib/extension
