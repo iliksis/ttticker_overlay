@@ -1,12 +1,14 @@
 import { json } from '@sveltejs/kit';
 import { ServerEventBus } from '$lib/ServerEventBus';
 import type { ExtensionData } from '$lib/type';
+import { setTmpData } from '$lib/server/state.svelte.js';
 
 const eventBus = new ServerEventBus();
 
 export const POST = async ({ request }) => {
 	try {
 		const data: ExtensionData = await request.json();
+		setTmpData(data.responseData.data);
 		eventBus.emit('liveticker', data.responseData.data);
 		return json(
 			{ success: true },
@@ -29,7 +31,6 @@ export async function GET() {
 		start(controller) {
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			handleNewData = (event: any) => {
-				console.log('Received new data:', event);
 				// Check if controller is still open before trying to enqueue
 				if (!isControllerClosed) {
 					try {

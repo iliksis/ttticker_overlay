@@ -7,10 +7,14 @@
 	let data: Data | undefined = $state();
 	const table: Table | undefined = $derived(data?.tables[tableId - 1]);
 
-	onMount(() => {
+	onMount(async () => {
+		//preload existing data
+		const response = await fetch('/api/data');
+		const result = await response.json();
+		data = result.data;
+
 		const eventSource = new EventSource('/api/liveticker');
 		eventSource.onmessage = (event) => {
-			console.log(event);
 			const eventData = JSON.parse(event.data);
 			if (eventData.type === 'connected') {
 				console.log('Connected to server');

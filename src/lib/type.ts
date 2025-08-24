@@ -52,7 +52,7 @@ type Match = {
 	setInfo: SetInfo[];
 };
 
-type State = 'ONGOING' | 'FINISHED' | 'SCHEDULED' | 'NOT_RELEVANT';
+export type State = 'ONGOING' | 'FINISHED' | 'SCHEDULED' | 'NOT_RELEVANT';
 
 type SetInfo = {
 	id: string;
