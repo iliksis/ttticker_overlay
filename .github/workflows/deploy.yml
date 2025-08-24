@@ -13,9 +13,10 @@ jobs:
           uses: actions/checkout@v5.0.0
         - name: Replace baseURL placeholder
           run: find ./src/lib/extension/ -name "*.js" -type f -exec sed -i 's/{{baseURL}}/${{ secrets.baseUrl }}/g' {} \;
-        - uses: montudor/action-zip@v1.0.0
+        - uses: vimtor/action-zip@v1.2
           with:
-            args: cd ./src/lib/extension && zip -qq -r ../../../static/extension.zip ./
+            files: ./src/lib/extension
+            dest: ./static/extension.zip
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only
           env:
