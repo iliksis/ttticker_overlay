@@ -1,0 +1,256 @@
+{
+	"title": "1. FC Köln  vs TTC Altena ",
+	"notificationGroup": "game/14782",
+	"menu": "Liveticker",
+	"type": "game",
+	"userRequired": false,
+	"data": {
+		"id": "14782",
+		"group": "tt-news",
+		"home": "1. FC Köln",
+		"homeNumber": "",
+		"homeId": "148",
+		"away": "TTC Altena",
+		"awayNumber": "",
+		"awayId": "73",
+		"score": "1 - 0",
+		"league": "Deutsche Pokalmeisterschaft Erwachsene Vorrunde Gruppe 2",
+		"leagueSection": "Liga",
+		"leagueUrl": "/liga/deutsche-pokalmeisterschaft-erwachsene-vorrunde-gruppe-2",
+		"start": "2025-08-24T11:00:00Z",
+		"season": "2025/26",
+		"tables": [
+			{
+				"home": "Florian Bluhm",
+				"away": "Yoan Velichkov",
+				"score": {
+					"home": 11,
+					"away": 10
+				},
+				"sets": {
+					"home": 1,
+					"away": 2
+				},
+				"currentServe": "AWAY",
+				"timeoutHome": "USED",
+				"timeoutAway": "USED"
+			}
+		],
+		"matches": [
+			{
+				"id": "46710",
+				"home": "Tom Jarvis",
+				"away": "Stefan Dimitrov",
+				"score": "3 - 0",
+				"position": {
+					"home": "1",
+					"away": "2"
+				},
+				"state": "FINISHED",
+				"setInfo": [
+					{
+						"id": "old-1",
+						"score": "11:5 ",
+						"sequence": "HAAHHHHHHAAHAHHH",
+						"state": "FINISHED",
+						"winner": "HOME"
+					},
+					{
+						"id": "old-2",
+						"score": "11:5 ",
+						"sequence": "HAHHAHHAHAHHHHAH",
+						"state": "FINISHED",
+						"winner": "HOME"
+					},
+					{
+						"id": "old-3",
+						"score": "11:6 ",
+						"sequence": "HAHHHHHAHAAHHAHAH",
+						"state": "FINISHED",
+						"winner": "HOME"
+					}
+				]
+			},
+			{
+				"id": "46711",
+				"home": "Florian Bluhm",
+				"away": "Yoan Velichkov",
+				"score": "1 - 2",
+				"position": {
+					"home": "2",
+					"away": "1"
+				},
+				"state": "ONGOING",
+				"setInfo": [
+					{
+						"id": "old-1",
+						"score": " 8:11",
+						"sequence": "AHHAAHHHHAAAAAHAAHA",
+						"state": "FINISHED",
+						"winner": "AWAY"
+					},
+					{
+						"id": "old-2",
+						"score": "11:7 ",
+						"sequence": "HHHAHHAAHAAAAHHHHH",
+						"state": "FINISHED",
+						"winner": "HOME"
+					},
+					{
+						"id": "old-3",
+						"score": " 9:11",
+						"sequence": "HAAHHHHAAAHAHHAHAAAA",
+						"state": "FINISHED",
+						"winner": "AWAY"
+					},
+					{
+						"id": "old-4",
+						"score": "11:10",
+						"sequence": "HAHHAHHAHAHHAHAAAAAHH",
+						"state": "ONGOING",
+						"winner": "UNKNOWN"
+					}
+				]
+			},
+			{
+				"id": "46712",
+				"home": "Mike Hollo",
+				"away": "Mauro Schärrer",
+				"score": "-",
+				"position": {
+					"home": "3",
+					"away": "3"
+				},
+				"state": "SCHEDULED",
+				"setInfo": []
+			},
+			{
+				"id": "46713",
+				"home": "Tom Jarvis",
+				"away": "Yoan Velichkov",
+				"score": "-",
+				"position": {
+					"home": "1",
+					"away": "1"
+				},
+				"state": "NOT_RELEVANT",
+				"setInfo": []
+			},
+			{
+				"id": "46714",
+				"home": "Doppel A1",
+				"away": "Doppel B1",
+				"score": "-",
+				"position": {
+					"home": "D1",
+					"away": "D1"
+				},
+				"state": "NOT_RELEVANT",
+				"setInfo": []
+			}
+		],
+		"timeline": [
+			{
+				"id": "match-result-46710",
+				"type": "MatchResult",
+				"icon": "star",
+				"title": "Neuer Spielstand: 1 - 0",
+				"note": "",
+				"instant": "2025-08-24T10:37:48Z"
+			},
+			{
+				"id": "",
+				"type": "MatchResult",
+				"icon": "star",
+				"title": "Tom Jarvis gewinnt klar 3 - 0 gegen Stefan Dimitrov.",
+				"note": "",
+				"instant": "2025-08-24T10:37:48Z"
+			},
+			{
+				"type": "GameStart",
+				"icon": "star",
+				"title": "Spielbeginn 1. FC Köln  gegen TTC Altena ",
+				"note": "",
+				"instant": "2025-08-24T10:20:46Z"
+			}
+		],
+		"location": "Biggestraße 2, 50931 Köln",
+		"referee": "Erik Harren",
+		"state": "ONGOING",
+		"url": "/spiel/deutsche-pokalmeisterschaft-erwachsene-vorrunde-gruppe-2/2025-08-24/1-fc-koeln-vs-ttc-altena",
+		"lineup": {
+			"home": [
+				{
+					"player": {
+						"id": "13742",
+						"name": "Tom Jarvis"
+					},
+					"position": "1"
+				},
+				{
+					"player": {
+						"id": "13743",
+						"name": "Florian Bluhm"
+					},
+					"position": "2"
+				},
+				{
+					"player": {
+						"id": "13745",
+						"name": "Mike Hollo"
+					},
+					"position": "3"
+				},
+				{
+					"player": {
+						"id": "0",
+						"name": " "
+					},
+					"player2": {
+						"id": "0",
+						"name": " "
+					},
+					"position": "D1"
+				}
+			],
+			"away": [
+				{
+					"player": {
+						"id": "11512",
+						"name": "Stefan Dimitrov"
+					},
+					"position": "2"
+				},
+				{
+					"player": {
+						"id": "14027",
+						"name": "Yoan Velichkov"
+					},
+					"position": "1"
+				},
+				{
+					"player": {
+						"id": "12156",
+						"name": "Mauro Schärrer"
+					},
+					"position": "3"
+				},
+				{
+					"player": {
+						"id": "0",
+						"name": " "
+					},
+					"player2": {
+						"id": "0",
+						"name": " "
+					},
+					"position": "D1"
+				}
+			]
+		},
+		"scoreBalls": "72:55",
+		"scoreSets": "4:2",
+		"covidRestricted": false,
+		"goldenMatch": false
+	}
+}

@@ -1,13 +1,19 @@
-import { ServerEventBus } from '$lib/ServerEventBus';
 import { json } from '@sveltejs/kit';
+import { ServerEventBus } from '$lib/ServerEventBus';
+import type { ExtensionData } from '$lib/type';
 
 const eventBus = new ServerEventBus();
 
 export const POST = async ({ request }) => {
 	try {
-		const data = await request.json();
-		eventBus.emit('liveticker', data);
-		return json({ success: true });
+		const data: ExtensionData = await request.json();
+		eventBus.emit('liveticker', data.responseData.data);
+		return json(
+			{ success: true },
+			{
+				status: 200
+			}
+		);
 	} catch (error) {
 		return json({ success: false, error: error });
 	}
@@ -23,6 +29,7 @@ export async function GET() {
 		start(controller) {
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			handleNewData = (event: any) => {
+				console.log('Received new data:', event);
 				// Check if controller is still open before trying to enqueue
 				if (!isControllerClosed) {
 					try {
