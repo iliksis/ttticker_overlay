@@ -95,7 +95,7 @@
 				<!-- Waiting Matches -->
 				{#if waitingMatches && waitingMatches.length > 0}
 					<section>
-						<h2 class="mb-6 text-left text-2xl font-bold text-white">🟡 Wartende Spiele</h2>
+						<h2 class="mb-6 text-left text-2xl font-bold text-white">🟡 Nächste Spiele</h2>
 						<div class="grid grid-cols-1 gap-4">
 							{#each waitingMatches as match}
 								<div
