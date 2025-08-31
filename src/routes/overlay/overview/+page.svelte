@@ -29,7 +29,7 @@
 		class="absolute top-0 right-0 bottom-0 left-0 m-auto h-fit w-5xl items-start justify-center rounded-md bg-linear-to-br from-player/80 to-match/80 p-6 text-white"
 	>
 		<!-- Team Header -->
-		<div class="m-2 mt-2 mb-16 grid grid-cols-3">
+		<div class="m-2 mt-2 mb-8 grid grid-cols-3">
 			<div class="text-start text-3xl font-semibold">{data.home}</div>
 			<div class="flex flex-col items-center gap-2">
 				<div class="text-3xl font-bold">{data.score}</div>
@@ -42,7 +42,7 @@
 		</div>
 
 		{#each data.matches as match}
-			<div class="m-2 my-6 flex flex-col items-center gap-2">
+			<div class="m-2 my-3 flex flex-col items-center gap-2">
 				<Match
 					awayPlayer={match.away}
 					homePlayer={match.home}
