@@ -18,6 +18,9 @@ jobs:
           with:
             files: ./src/lib/extension
             dest: ./static/extension.zip
+        - name: Prepare sveltekit
+          run: |
+            npm run prepare
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only
           env:
