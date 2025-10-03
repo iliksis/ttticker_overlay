@@ -16,7 +16,7 @@
 			<div class="font-semibold">{homePlayer}</div>
 		</div>
 	</div>
-	<div class={['text-center font-bold', status === 'ONGOING' && 'text-linear-2']}>
+	<div class={['text-center font-bold opacity-60', status === 'ONGOING' && 'opacity-100']}>
 		{score}
 	</div>
 	<div class="flex items-center justify-end">

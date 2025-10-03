@@ -37,19 +37,7 @@
 		<a class="card card-hover" href="/overview">
 			<div class="mb-4 text-5xl">📊</div>
 			<h3 class="mb-2 text-2xl font-bold text-white">Übersicht</h3>
-			<p class="text-white/80">Overlay für die komplette Spielübersicht</p>
-		</a>
-
-		<a class="card card-hover" href="/table/1">
-			<div class="mb-4 text-5xl">🏓</div>
-			<h3 class="mb-2 text-2xl font-bold text-white">Tisch 1</h3>
-			<p class="text-white/80">Overlay für Tisch 1</p>
-		</a>
-
-		<a class="card card-hover" href="/table/2">
-			<div class="mb-4 text-5xl">🏓</div>
-			<h3 class="mb-2 text-2xl font-bold text-white">Tisch 2</h3>
-			<p class="text-white/80">Overlay für Tisch 2</p>
+			<p class="text-white/80">Komplette Spielübersicht</p>
 		</a>
 	</div>
 

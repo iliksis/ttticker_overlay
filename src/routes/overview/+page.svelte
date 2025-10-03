@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Match from '$lib/components/match.svelte';
+	import type { OverlayState } from '$lib/server/state.svelte';
 	import type { Data } from '$lib/type';
 	import { onMount } from 'svelte';
 
@@ -28,6 +29,13 @@
 			}
 		};
 	});
+
+	const setOverlayState = async (table: number, state: OverlayState) => {
+		await fetch('/api/overlay', {
+			method: 'POST',
+			body: JSON.stringify({ table, state })
+		});
+	};
 </script>
 
 <div
@@ -55,6 +63,30 @@
 
 		{#if data}
 			<main class="flex flex-col gap-8">
+				<div class="flex flex-row gap-4">
+					<div class="card">
+						<h3 class="mb-2 text-2xl font-bold text-white">Tisch 1</h3>
+						<button
+							class="focus:ring-opacity-50 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none"
+							onclick={() => setOverlayState(1, 'score')}>Score anzeigen</button
+						>
+						<button
+							class="focus:ring-opacity-50 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none"
+							onclick={() => setOverlayState(1, 'overview')}>Overview anzeigen</button
+						>
+					</div>
+					<div class="card">
+						<h3 class="mb-2 text-2xl font-bold text-white">Tisch 2</h3>
+						<button
+							class="focus:ring-opacity-50 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none"
+							onclick={() => setOverlayState(2, 'score')}>Score anzeigen</button
+						>
+						<button
+							class="focus:ring-opacity-50 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white transition-colors focus:ring-2 focus:ring-blue-500 focus:outline-none"
+							onclick={() => setOverlayState(2, 'overview')}>Overview anzeigen</button
+						>
+					</div>
+				</div>
 				<!-- Match Status Summary -->
 				<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
 					<div class="text-3xl font-bold">{data.home}</div>
@@ -65,7 +97,7 @@
 							<div class="text-md text-white/80">Bälle: {data.scoreBalls}</div>
 						</div>
 					</div>
-					<div class="text-3xl font-bold">{data?.away}</div>
+					<div class="text-3xl font-bold">{data.away}</div>
 				</div>
 
 				<!-- Active Matches -->
@@ -134,8 +166,4 @@
 			</main>
 		{/if}
 	</div>
-
-	<footer class="mt-auto p-8 text-center text-sm text-white/60">
-		Letzte Aktualisierung: Jetzt
-	</footer>
 </div>
